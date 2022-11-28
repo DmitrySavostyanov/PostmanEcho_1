@@ -15,8 +15,8 @@ public class PostmanEchoTest {
                 .when()
                 .post("/post")
                 .then()
-                .statusCode(512)
-                .body("data", equalTo("Это мой первый API автотест?"));
+                .statusCode(200)
+                .body("data", equalTo("Это мой первый API автотест или...?"));
     }
 
 
